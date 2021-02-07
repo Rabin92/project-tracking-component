@@ -6,7 +6,7 @@ const toggleMenuIcon = () => {
     nav.style.display = 'block';
     nav.style.animation = 'slideRight 1s ease-in-out forwards';
   } else {
-    nav.style.animation = 'slideAway 1s ease-in-out forwards';
+    nav.style.animation = 'slideUp 1s ease-in-out forwards';
   }
 };
 
