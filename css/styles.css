@@ -268,10 +268,6 @@ img {
   height: auto;
 }
 
-hr {
-  border: 1px solid #eef3f6;
-}
-
 ul,
 li {
   margin: 0;
@@ -385,6 +381,9 @@ button {
 }
 .nav__item:hover {
   text-decoration: underline;
+}
+.nav__item--line {
+  border-bottom: 1px solid #eef3f6;
 }
 .nav__item--col {
   color: #a0a1ac;
