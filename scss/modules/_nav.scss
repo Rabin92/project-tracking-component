@@ -23,6 +23,10 @@
       text-decoration: $underline;
     }
 
+    @include m(line) {
+      border-bottom: 1px solid $catskillWhite;
+    }
+
     @include m(col) {
       color: $santasGray;
     }
