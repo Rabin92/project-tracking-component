@@ -1,0 +1,90 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.nav {
+  display: none;
+  background: $white;
+  text-align: $text--center;
+  padding: $gutters;
+  position: absolute;
+  width: calc(100% - 40px);
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  @include nav();
+
+  @include e(item) {
+    padding: 0.55em;
+    cursor: $cursor;
+
+    &:hover {
+      text-decoration: $underline;
+    }
+
+    @include m(col) {
+      color: $santasGray;
+    }
+  }
+}
+
+.nav-lrg {
+  display: none;
+
+  @media #{$break--s} {
+    display: block;
+
+    @include nav();
+
+    @include e(item) {
+      display: inline-block;
+      padding: em(0px) em(20px);
+      cursor: $cursor;
+
+      &:hover {
+        text-decoration: $underline;
+      }
+
+      @include m(size) {
+        font-size: 30px;
+        border: 1px solid red;
+      }
+
+      @include m(round) {
+        &::after {
+          content: '';
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background-color: $santasGray;
+          border-radius: 50%;
+        }
+      }
+
+      @include m(col) {
+        color: $comet;
+        padding-left: em(30px);
+      }
+    }
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-400px);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideAway {
+  100% {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,71 @@
+// ==========================================================================
+// Section
+// ==========================================================================
+
+.grid-container {
+  flex: 1;
+
+  @media #{$break--m} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'main illustration';
+  }
+}
+
+.main {
+  margin-top: em(40px);
+  text-transform: uppercase;
+  color: $santasGray;
+  padding: $gutters;
+
+  @media #{$break--m} {
+    max-width: 500px;
+  }
+
+  @include e(label) {
+    letter-spacing: 0.277em;
+    font-size: em(16px);
+    font-family: $font-family--secondary;
+  }
+
+  @include e(span) {
+    padding: 0.25em 0.65em;
+    border-radius: 15px;
+    color: $white;
+    background: $ebonyClay;
+    margin-right: em(10px);
+    font-weight: $font-weight--bold;
+    letter-spacing: initial;
+  }
+
+  @include e(title) {
+    color: $header-col;
+    line-height: 1;
+
+    @media #{$break--l} {
+      font-size: em(61px);
+    }
+  }
+
+  @include e(subtitle) {
+    color: $comet;
+    text-transform: initial;
+    max-width: 290px;
+    margin-bottom: em(30px);
+  }
+
+  @include e(btn) {
+    background: $btn-col;
+    padding: 0.55em 0.95em;
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+    margin-right: em(15px);
+    font-size: em(16px);
+
+    &:hover {
+      background-color: lighten($btn-col, 10%);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}

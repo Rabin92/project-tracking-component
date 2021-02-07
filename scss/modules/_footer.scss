@@ -1,0 +1,17 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+.footer {
+  text-align: $text--center;
+  padding: $gutters;
+  margin-top: em(50px);
+
+  @include e(link) {
+    color: $santasGray;
+
+    &:hover {
+      text-decoration: $underline;
+    }
+  }
+}

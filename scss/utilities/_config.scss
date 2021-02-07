@@ -1,0 +1,48 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+$font-url--primary: 'https://fonts.googleapis.com/css2?family=Barlow&display=swap';
+$font-family--primary: 'Barlow', sans-serif;
+
+$font-url--secondary: 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap';
+$font-family--secondary: 'Barlow Condensed', sans-serif;
+
+// Font Weights
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+
+// Descriptive Base Colors
+$white: #fff;
+$black: #000;
+$persimmon: #ff5c5c;
+$ebonyClay: #242942;
+$comet: #5b5f71;
+$santasGray: #a0a1ac;
+$catskillWhite: #eef3f6;
+
+// Color Usage
+$color-body: $catskillWhite;
+$header-col: $ebonyClay;
+$btn-col: $persimmon;
+
+// Text
+$base__font-size: 18px;
+$base__line: 24px;
+$text--center: center;
+$underline: underline;
+
+// Path to Assets
+$path--rel: '../images';
+
+// Cursor
+$cursor: pointer;
+
+// Gutters
+$gutters: 1em;
+
+// Media queries
+$break--s: '(min-width: 600px)';
+$break--m: '(min-width: 768px)';
+$break--l: '(min-width: 1024px)';

@@ -1,0 +1,61 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family--primary;
+  background-color: $color-body;
+  font-weight: $font-weight--medium;
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+
+  @include flexy($f-dir: column, $a-items: null);
+  min-height: 100vh;
+}
+
+header {
+  padding: $gutters;
+  position: relative;
+}
+
+h1,
+span,
+nav,
+button {
+  font-family: $font-family--secondary;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: 1px solid $catskillWhite;
+}
+
+// Lists
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// Button
+
+button {
+  outline: 0;
+  border: none;
+}

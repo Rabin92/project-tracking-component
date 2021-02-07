@@ -1,0 +1,36 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.header {
+  @include flexy($j-content: space-between);
+  padding: em(30px) em(0px);
+
+  @include e(logo) {
+    height: em(25px);
+  }
+}
+
+.illustration-device {
+  margin-top: em(10px);
+  grid-area: illustration;
+
+  @media #{$break--m} {
+    max-width: 720px;
+  }
+
+  @media #{$break--l} {
+    max-width: 960px;
+  }
+}
+
+.background {
+  background: #e3e4ec;
+  position: absolute;
+  width: 50%;
+  height: 350px;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 50px;
+  z-index: -1;
+}
