@@ -436,9 +436,15 @@ button {
     transform: scale(1);
   }
 }
-@keyframes slideAway {
+@keyframes slideUp {
+  0% {
+    height: 150%;
+    overflow: hidden;
+  }
   100% {
-    transform: translateX(400px);
+    height: 0;
+    overflow: hidden;
+    padding: unset;
     opacity: 0;
   }
 }
