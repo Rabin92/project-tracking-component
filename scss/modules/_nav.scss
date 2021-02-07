@@ -17,7 +17,6 @@
 
   @include e(item) {
     padding: 0.55em;
-    cursor: $cursor;
 
     &:hover {
       text-decoration: $underline;
@@ -31,6 +30,10 @@
       color: $santasGray;
     }
   }
+
+  @include e(link) {
+    color: $ebonyClay;
+  }
 }
 
 .nav-lrg {
@@ -41,10 +44,13 @@
 
     @include nav();
 
+    @include e(link) {
+      color: $ebonyClay;
+    }
+
     @include e(item) {
       display: inline-block;
       padding: em(0px) em(20px);
-      cursor: $cursor;
 
       &:hover {
         text-decoration: $underline;
@@ -68,7 +74,7 @@
 
       @include m(col) {
         color: $comet;
-        padding-left: em(30px);
+        padding-left: em(20px);
       }
     }
   }
