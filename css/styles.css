@@ -260,7 +260,6 @@ button {
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 img {
@@ -373,11 +372,9 @@ button {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #242942;
 }
 .nav__item {
   padding: 0.55em;
-  cursor: pointer;
 }
 .nav__item:hover {
   text-decoration: underline;
@@ -388,6 +385,9 @@ button {
 .nav__item--col {
   color: #a0a1ac;
 }
+.nav__link {
+  color: #242942;
+}
 
 .nav-lrg {
   display: none;
@@ -397,12 +397,13 @@ button {
     display: block;
     font-weight: 700;
     text-transform: uppercase;
+  }
+  .nav-lrg__link {
     color: #242942;
   }
   .nav-lrg__item {
     display: inline-block;
     padding: 0em 1.1111111111em;
-    cursor: pointer;
   }
   .nav-lrg__item:hover {
     text-decoration: underline;
@@ -421,7 +422,7 @@ button {
   }
   .nav-lrg__item--col {
     color: #5b5f71;
-    padding-left: 1.6666666667em;
+    padding-left: 1.1111111111em;
   }
 }
 
